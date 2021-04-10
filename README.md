@@ -1,8 +1,9 @@
 # Kokoa Clone 2021 Study
 
-Study HTML5, CSS3 (with Nomad Corders; https://nomadcoders.co/).
+Study HTML5, CSS3 (with Nomad Corders; https://nomadcoders.co/).  
 Class name is "코코아톡 클론코딩 (Kokoa Talk Clone Coding)".
 
-period: 2021-04-09 ~ Now
-Skill: Front-End: HTML5, CSS3
-Environment: VSCode
+- period: 2021-04-09 ~ Now
+- Skill:
+  - Front-End: HTML5, CSS3
+- Environment: VSCode
