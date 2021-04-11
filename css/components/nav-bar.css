@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /* study more */
+  border-top: 1px solid rgba(129, 129, 129, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.nav__btn:nth-child(2) .nav__notification {
+  width: 20px;
+  height: 20px;
+  font-weight: 600;
+  font-size: 6px;
+  color: white;
+  left: 18px;
+  bottom: 18px;
+}
+
+.nav__btn:nth-child(4) .nav__notification {
+  width: 7px;
+  height: 7px;
+  left: 29px;
+  bottom: 29px;
+}
