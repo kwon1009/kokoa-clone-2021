@@ -16,6 +16,17 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transition: none;
+    opacity: 1;
+  }
+}
+
 /* 문제점
 style.css의 main-screen이 제일 나중에 적용되어서 아래의 main-chat의 margin-top 내용이 적용되지 않음
 해당 내용이 계속해서 적용되지 않는 문제점이 발생됨 */
@@ -24,6 +35,7 @@ style.css의 main-screen이 제일 나중에 적용되어서 아래의 main-chat
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -109,6 +121,7 @@ message__info는 flex 정렬되어 있는 상태이므로 아래의 내용이 �
   padding: 5px 25px;
   align-items: center;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -125,6 +138,7 @@ message__info는 flex 정렬되어 있는 상태이므로 아래의 내용이 �
   border: var(--main-border);
   border-radius: 10px;
   padding-left: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -154,4 +168,26 @@ message__info는 flex 정렬되어 있는 상태이므로 아래의 내용이 �
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3 ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reply input:focus {
+  width: 90vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
