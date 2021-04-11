@@ -1,0 +1,101 @@
+#chat-screen {
+  background-color: var(--background-chat);
+  height: 11000vh;
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+  background-color: var(--background-chat);
+}
+
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 20px;
+  background-color: var(--background-chat);
+  z-index: 1;
+}
+
+/* 문제점
+style.css의 main-screen이 제일 나중에 적용되어서 아래의 main-chat의 margin-top 내용이 적용되지 않음
+해당 내용이 계속해서 적용되지 않는 문제점이 발생됨 */
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 8px 17px;
+  border-radius: 13px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.message__author {
+  color: var(--dark-gray);
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 13px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+/*
+flex 정렬되어 있는 개체를 순서 정렬할 수 있게 도와줌
+message__info는 flex 정렬되어 있는 상태이므로 아래의 내용이 적용 가능
+.message-row--own .message__bubble {
+  order: 1;
+}
+.message-row--own .message__time {
+  order: 0;
+}
+--> flex-direction을 row-reverse 한 것과 동일한 효과
+*/
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
+}
