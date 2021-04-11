@@ -1,6 +1,7 @@
 .user-component {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .user-component,
@@ -41,5 +42,24 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.user-component__column:last-child .badge {
+  width: 25px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 11px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

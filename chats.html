@@ -25,60 +25,49 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="src/photo_me.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Kwon HS</h4>
-            <!-- <h6 class="user-component__subtitle">this text.</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-      </div>
-
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
             src="src/photo_cat.jpg"
-            class="user-component__avatar user-component__avatar--sm"
+            class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title user-component__title--not-bold">
-              Cat
-            </h4>
-            <!-- <h6 class="user-component__subtitle">this text.</h6> -->
+            <h4 class="user-component__title">Cat</h4>
+            <h6 class="user-component__subtitle">The Lovely cat.</h6>
           </div>
         </div>
         <div class="user-component__column">
-          <div>
-            <span>2</span>
-            <i class="fas fa-chevron-right fa-xs"></i>
+          <span class="user-component__time">18:18</span>
+          <!--<div class="badge"></div>-->
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="src/photo_cats.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Cats</h4>
+            <h6 class="user-component__subtitle">
+              Show me the money. You can do this.
+            </h6>
           </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">10:09</span>
+          <div class="badge">3</div>
         </div>
       </div>
     </main>
