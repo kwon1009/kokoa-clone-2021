@@ -6,8 +6,8 @@
 }
 
 .screen-header__title {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
 }
 
 .screen-header__icons span {
